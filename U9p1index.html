@@ -44,7 +44,7 @@
 
     select {
       font-size: 1rem;
-      padding: 6px 8px;   /* touch-friendly */
+      padding: 6px 8px;
       margin: 0 4px;
       border-radius: 6px;
       border: 1px solid #ccc;
@@ -52,7 +52,20 @@
       max-width: 100%;
     }
 
-    /* Navigation bar */
+    option[disabled] {
+      font-weight: bold;
+      color: green;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #555;
+      background: #f0f0f0;
+      margin-top: auto;
+    }
+        /* Navigation bar */
     .nav-bar {
       display: flex;
       justify-content: space-around;
@@ -78,26 +91,9 @@
       background: #0055aa;
     }
 
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
-      color: #555;
-      background: #f0f0f0;
-      margin-top: auto;
-    }
-
     @media (max-width: 600px) {
       body { padding: 10px; }
       p, select { font-size: 0.95rem; }
-
-      .nav-bar {
-        flex-direction: column;
-      }
-      .nav-bar a {
-        font-size: 1rem;
-        padding: 12px;
-      }
     }
   </style>
 </head>
@@ -105,27 +101,22 @@
   <div class="container">
     <h1>CAE Use of English – Part 1</h1>
     <p>
-      For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.
+      For questions 0–7, read the text below and decide which answer (A, B, C or D) best fits each gap.
       There is an example at the beginning (0).
     </p>
-    <p><strong>Example:</strong> 0 A different B distinct C range D diverse</p>
+    <p><strong>Example:</strong> 0 <u>Myths</u></p>
 
     <p>
-      The more we look into our cultures and history, the more similarities we find—suggesting that human societies,
-      though <strong>0. diverse</strong> in expression, are deeply connected by shared origins and universal experiences.
-    </p>
-
-    <p>
-      Many <strong>1.</strong>
-      <select>
-        <option value="">— Choose —</option>
-        <option>A Stories</option>
-        <option>B Books</option>
-        <option>C Heroes</option>
-        <option>D Myths</option>
-        <option>E Information</option>
+      Many <strong>0.</strong>
+      <select disabled>
+        <option>— Choose —</option>
+        <option selected disabled>✔ Myths</option>
+        <option>Stories</option>
+        <option>Books</option>
+        <option>Heroes</option>
+        <option>Information</option>
       </select>
-      and legends share <strong>2.</strong>
+      and legends share <strong>1.</strong>
       <select>
         <option value="">— Choose —</option>
         <option>A Striking</option>
@@ -139,7 +130,7 @@
     </p>
 
     <p>
-      Creation stories frequently feature chaos transformed into order, with gods or cosmic forces <strong>3.</strong>
+      Creation stories frequently feature chaos transformed into order, with gods or cosmic forces <strong>2.</strong>
       <select>
         <option value="">— Choose —</option>
         <option>A Creating</option>
@@ -148,7 +139,7 @@
         <option>D Shaping</option>
         <option>E Telling</option>
       </select>
-      the world—seen in Greek, Egyptian, and Maori accounts. Trickster figures like Loki (Norse), Anansi (West African), and Coyote (Native American) embody cleverness and disruption, challenging norms and revealing <strong>4.</strong>
+      the world—seen in Greek, Egyptian, and Maori accounts. Trickster figures like Loki (Norse), Anansi (West African), and Coyote (Native American) embody cleverness and disruption, challenging norms and revealing <strong>3.</strong>
       <select>
         <option value="">— Choose —</option>
         <option>A Hidden</option>
@@ -161,7 +152,7 @@
     </p>
 
     <p>
-      Hero’s journey <strong>5.</strong>
+      Hero’s journey <strong>4.</strong>
       <select>
         <option value="">— Choose —</option>
         <option>A Rumours</option>
@@ -170,7 +161,7 @@
         <option>D Plot</option>
         <option>E Writing</option>
       </select>
-      , from Gilgamesh to King Arthur, follow a pattern of departure, trial, and <strong>6.</strong>
+      , from Gilgamesh to King Arthur, follow a pattern of departure, trial, and <strong>5.</strong>
       <select>
         <option value="">— Choose —</option>
         <option>A Come back</option>
@@ -183,7 +174,7 @@
     </p>
 
     <p>
-      These recurring motifs reflect shared <strong>7.</strong>
+      These recurring motifs reflect shared <strong>6.</strong>
       <select>
         <option value="">— Choose —</option>
         <option>A Physiological</option>
@@ -196,7 +187,7 @@
     </p>
 
     <p>
-      Their universality underscores the <strong>8.</strong>
+      Their universality underscores the <strong>7.</strong>
       <select>
         <option value="">— Choose —</option>
         <option>A Real</option>
@@ -208,12 +199,11 @@
       connections among human societies across time and geography.
     </p>
   </div>
-
-  <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
   <div class="nav-bar">
     <a href="index.html">Main Page</a>
-    <a href="U9p2.html">Part 2</a>
-    <a href="U9p3.html">Part 3</a>
+    <a href="part1.html">Part 1</a>
+    <a href="part3.html">Part 3</a>
   </div>
 
   <footer>
@@ -221,4 +211,3 @@
   </footer>
 </body>
 </html>
-
